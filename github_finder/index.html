@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Finder Project</title>
+    <link rel="stylesheet" href="./main.css">
+    <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">GitHub Finder</div>
+        <div class="search_bar">
+            <h1>Search GitHub Users</h1>
+            <div>Enter a username to fetch a user profile and repos</div>
+            <input type="text" name="" id="user" placeholder="User를 입력해주세요.">
+        </div>
+    </header>
+    <main>
+        <div id="user_info">
+            <div id="profile_container">
+                <img src="./assets/images/user.svg" alt="profile-img" id="profile_img"/>
+                <button id="viewProfile-btn">View Profile</button>
+            </div>
+            <div id="info">
+                <div id="github_info">
+                    <div id="Public_Repos">Public Repos: 0</div>
+                    <div id="Public_Gists">Public Gists: 0</div>
+                    <div id="Followers">Followers: 100</div>
+                    <div id="Following">Following: 0</div>
+                </div>
+                <div id="user_detail">
+                    <div>Company: N/A</div>
+                    <div>Website/Blog: N/A</div>
+                    <div>Location: N/A</div>
+                    <div>Member Since: N/A</div>
+                </div>
+            </div>
+        </div>
+        <a href=`${}`></a>
+        <div id="repos_info">
+            <h2>Latest Repos</h2>
+            <div id="repos_container">
+                <div class="repos_detail">
+                    <div class="repos_name">검색된 Repository가 없습니다.</div>
+                    <div class="repos_rate">
+                        <div class="stars">Stars: 0</div>
+                        <div class="watchers">Watchers: 0</div>
+                        <div class="forks">Forks: undefined</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="githubChart">
+            <h2>Github Chart</h2>
+            <div id="chartImg_container">
+                <img src="./assets/images/chart-bar.svg" id="chartImg"/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
